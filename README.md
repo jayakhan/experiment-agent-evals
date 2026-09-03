@@ -127,6 +127,6 @@ Potential extensions include:
 ## References
 
 - Andrew Ng, DeepLearning.AI — *Agentic AI*
-- DeepLearning.AI / Arize AI — *Evaluating AI Agents*
+- Andrew Ng, DeepLearning.AI / *MCP: Build Rich-Context AI Apps with Anthropic*
 - Anthropic — *Demystifying Evals for AI Agents*
 - Liu et al. (2024) — *AgentBench: Evaluating LLMs as Agents*, ICLR 2024
