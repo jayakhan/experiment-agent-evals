@@ -23,8 +23,8 @@ def evaluate_kpi_analysis(data, kpi: str, reported_statistics):
             reported_treatment_n=reported_statistics.treatment_n,
         ),
         evaluate_sample_adequacy(
-            control_count=control_values.notna().sum(),
-            treatment_count=treatment_values.notna().sum(),
+            control_count=(control_values.dropna() != 0).sum(),
+            treatment_count=(treatment_values.dropna() != 0).sum(),
         ),
     ]
 

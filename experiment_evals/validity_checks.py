@@ -72,7 +72,7 @@ def evaluate_sample_adequacy(
     treatment_count: int,
     minimum_count: int = 10,
 ) -> AssumptionResult:
-    """Apply the current MVP minimum-sample rule to both groups."""
+    """Require a minimum number of events (non-missing, non-zero values) in both groups."""
 
     passed = control_count >= minimum_count and treatment_count >= minimum_count
 

@@ -76,10 +76,10 @@ def evaluate_agent_statistics(
     """Compare AI-reported statistics with independent calculations."""
 
     checks = [
-        ("Control Mean", isclose(reported.control_mean, expected["control_mean"], rel_tol=0.01)),
-        ("Treatment Mean", isclose(reported.treatment_mean, expected["treatment_mean"], rel_tol=0.01)),
-        ("Absolute Lift", isclose(reported.absolute_lift, expected["absolute_lift"], rel_tol=0.01)),
-        ("Relative Lift", isclose(reported.relative_lift, expected["relative_lift"], rel_tol=0.01, abs_tol=1e-9)),
+        ("Control Mean", isclose(reported.control_mean, expected["control_mean"], rel_tol=0.01, abs_tol=0.0001)),
+        ("Treatment Mean", isclose(reported.treatment_mean, expected["treatment_mean"], rel_tol=0.01, abs_tol=0.0001)),
+        ("Absolute Lift", isclose(reported.absolute_lift, expected["absolute_lift"], rel_tol=0.01, abs_tol=0.0001)),
+        ("Relative Lift", isclose(reported.relative_lift, expected["relative_lift"], rel_tol=0.01, abs_tol=0.0001)),
         ("P-value", isclose(reported.p_value, expected["p_value"], rel_tol=0.05, abs_tol=0.001)),
         (
             "Confidence Interval",

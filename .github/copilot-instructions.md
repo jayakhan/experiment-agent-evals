@@ -41,7 +41,7 @@ Run the existing ExperimentEvals objective evaluation.
 Use the repository's evaluation logic for:
 
 - Data Validation, using metrics defined in `experiment_evals/validity_checks.py`.
-- Statistics, using metrics defined in `experiment_evals/statistics_checks.py`
+- Statistics, using metrics defined in `experiment_evals/statistical_checks.py`
 - Then evaluate the frozen analyst interpretation using every rubric
 defined in `experiment_evals/interpretation_rubrics.py`.
   Currently:
